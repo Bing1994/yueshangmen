@@ -5,6 +5,9 @@
 		<meta charset="UTF-8">
 		<title>预约</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+    	<meta name="format-detection" content="telephone=no"/>
+    	<meta content="telephone=no" name="format-detection">
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link href="css/common.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/iconfont.css" />
@@ -120,12 +123,37 @@
 			.mui-table-view-cell>a:not(.mui-btn) {
 				padding: 10px;
 			}
+			
+			
+			
+					.mui-backdrop {
+    		position: fixed;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		left: 0;
+    		z-index: 998;
+    		background-color: rgba(0,0,0,.3);
+    		display:none;
+		}
+		.prosperitie{
+			width:300px;
+			height:150px;
+			background:#fff;
+			border-radius:10px;
+			text-align:center;
+			line-height:150px;
+			position:absolute;
+			top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%)
+		}
 		</style>
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
 			<h1 class="mui-title">预约</h1>
 		</header>
 		<div class="mui-content">
@@ -146,10 +174,15 @@
 					</li>
 				</ul>
 			</div>
-			<div class="yuyue">
+			<div class="yuyue" id="yuyue">
 				<span>直接预约</span>
 			</div>
-
+			
+	<div class="mui-backdrop" id="prosperitie">
+		<div class="prosperitie">
+			预约成功
+		</div>
+	</div>
 		</div>
 	</body>
 	<script src="js/mui.min.js"></script>
@@ -190,6 +223,9 @@
 //				//return false;
 //			});
 //		}, false);
+	
+
+
 	</script>
 
 </html>

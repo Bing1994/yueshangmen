@@ -5,6 +5,9 @@
 		<meta charset="UTF-8">
 		<title>设置</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+    	<meta name="format-detection" content="telephone=no"/>
+    	<meta content="telephone=no" name="format-detection">
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link href="css/common.css" rel="stylesheet" />
 		<style type="text/css">
@@ -49,7 +52,7 @@
 			<div class="setting">
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell">
-						<a class="mui-navigate-right">个人资料</a>
+						<a class="mui-navigate-right ziliao">个人资料</a>
 					</li>
 					<li class="mui-table-view-cell">清除缓存</li>
 					<li class="mui-table-view-cell">
@@ -62,5 +65,12 @@
 	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		mui.init()
+		
+		mui(".mui-table-view").on('tap','.ziliao',function(){
+  		mui.openWindow({
+    		id:'gerenziliao',
+    		url:'gerenziliao.html'
+  		})
+	})
 	</script>
 </html>

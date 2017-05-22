@@ -5,6 +5,9 @@
 		<meta charset="UTF-8">
 		<title>搜索技师</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+    	<meta name="format-detection" content="telephone=no"/>
+    	<meta content="telephone=no" name="format-detection">
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
@@ -116,7 +119,7 @@
 	</head>
 	<body>
 	<header class="mui-bar mui-bar-nav">
-		<a class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+		<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
 		<h1 class="mui-title">搜索技师</h1>
 	</header>
 	<div class="mui-content">
@@ -213,6 +216,12 @@
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
+				mui(".mui-table-view").on('tap','li',function(){
+  					mui.openWindow({
+    				id:'jishixiangqing',
+    				url:'jishixiangqing.html'
+  				})
+			})
 		</script>
 
 
