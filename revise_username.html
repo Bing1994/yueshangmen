@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改用户名</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<style>
+			.mui-input-group .mui-input-row:after,.mui-input-group:after,.mui-input-group:before{
+				height:0;
+			}
+			a{
+				color:#000;
+			}
+			.mui-input-group{
+				background:#f3f3f3;
+				padding:10px;
+			}
+			.username{
+				border-radius:4px;
+			}
+			.username input{
+				background:#fff;
+				font-size:14px;
+				color:#adadad;
+			}
+			.mui-input-group .mui-input-row{
+				margin-bottom:10px;
+			}
+			.mui-button-row{
+				margin-top:50px;
+			}
+			.mui-btn{
+				width: 100%;
+				background:#ff9702;
+				color:#fff;
+				height:40px;
+				display: block;
+				border:none;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        	<h1 class="mui-title">修改用户名</h1>
+    	</header>
+    	<div class="mui-content">
+			<form class="mui-input-group">
+    			<div class="mui-input-row username">
+    				<input type="text" class="mui-input-clear" placeholder="请输入用户名">
+    			</div>
+    			<div class="mui-button-row">
+					<button class="mui-btn" type="button">确认修改</button>
+				</div>
+			</form>
+    	</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	
+
+</html>

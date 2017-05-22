@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>技师详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<style type="text/css">
+			.mui-bar .mui-btn-link.mui-active, .mui-bar .mui-btn-link:active{
+				color: inherit;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				border: none;
+			}
+			img {
+				width: 100%;
+			}
+			body{
+				background:#fff;
+			}
+			.o-l-left {
+				float: left;
+				width: 50px;
+				border: 1px solid #ff9702;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+			
+			.o-l-left img {
+				display: block;
+			}
+			
+			.o-l-c-img {
+				font-size: 0;
+				line-height: 19px;
+				float:right;
+			}
+			.o-l-c-img img {
+				display: inline-block;
+				width: 10px;   
+				margin: 0 2.5px;
+				vertical-align: middle;
+			}
+			.umsg {
+				padding:10px 10px 0  10px;
+				background:#fff;
+			}
+			.pingjia_left div{
+				float: left;
+				font-size:12px;
+				line-height:20px;
+				margin-right:4px;
+				color:#ff9702;
+			}
+			.pingjia .o-l-c-img{
+				font-size: 0;
+			}
+			
+			.pingjia-top{
+				padding-bottom: 5px;
+			}
+			.pingjia{
+				background:#fff;
+				position:relative;
+			}
+		
+			.pingjia-img{
+				display: inline-block;
+    			width: 20px;
+    			height: 20px;
+			}
+			.pingjia_left{
+				width:70%;
+				float:left;
+			}
+			.pingjia_right{
+				width:30%;
+				float: right;
+				line-height: 20px;
+			}
+			.pingjia_right{
+				text-align: right;
+				font-size:12px;
+				color:#9d9c9c;
+			}
+			.pingjia-bottom p{
+				margin:0;
+				color:#2f2e2e;
+				font-size:14px;
+				line-height: 19px;
+			}
+			
+	.img-left{
+			color:#1f1f1f;
+			font-size:14px;
+			margin-left:5px;
+		}
+		.img-left p{
+			color:#ff9702;
+			font-size:12px;
+			margin-top:10px;
+		}
+		.img-left,.img-center{
+			float:left;
+		}
+		.img-right{
+			float:right;
+		}
+		.img-center{
+			margin-left:15%;
+		}
+		.img-center img{
+			width:12px;
+		}
+		.img-right-top{
+			font-size:12px;
+			color:#8b8b8a;
+		}
+		.img-right-top img{
+			width:14px;
+			vertical-align:middle;
+		}
+			
+		
+			.mui-table-view:before{
+				background: #bebebe;
+			}
+			.mui-table-view-cell:after{
+				background: #f3f3f3;
+
+			}
+			
+			.o-l-c-bottom{
+				margin-top:10px;
+			}
+			.o-l-c-bottom p{
+				color:#FF9702;
+			}
+			/*.mui-table-view:before,.mui-table-view:after{
+				left:10px;
+			}*/
+	/*介绍*/
+			.jieshao{
+				padding-left: 10px;
+				font-size:14px;
+				background:#fff;
+				padding-bottom:10px;
+			}
+			.jieshao-top{
+				line-height: 30px;
+			}
+			.jieshao li{
+				padding: 0;
+			}
+			.jieshao .mui-table-view-cell:after{
+				height: 0
+			}
+			.jieshao .mui-table-view-cell{
+				line-height: 26px;
+			}
+			.xinxi label{
+				color:#FF9702;
+			}
+			.xinxi span{
+				color:#2f2f2e;
+			}
+			.pingjiatop{
+				line-height:45px;	
+				padding-left:10px;
+			}
+			.jieshao-top span,.pingjiatop span{
+				border-left:2px solid #FF9702;
+				font-size:14px;
+				color:#FF9702;
+				padding-left:5px;
+			}
+			.btn{
+				text-align:center;
+				font-size:14px;
+				color:#FF9702;
+				margin-top:15px;
+			}
+			.yuyue{
+				height:40px;
+				background:#FF9702;
+				text-align:center;
+				font-size:15px;
+				line-height:40px;
+				color:#fff;
+				position:fixed;
+				bottom:0;
+				left:0;
+				right:0;
+			}
+			.yuyue span{
+				display:block;
+			}
+			/*套餐*/
+			.top-bar {
+				position: relative;
+				background: #fff;
+			}
+			.taocan{
+				padding:0 10px;
+				background:#fff;
+			}
+			.top-bar:after {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				content: '';
+				-webkit-transform: scaleY(.5);
+				transform: scaleY(.5);
+				background-color: #f3f3f3;
+			}
+			.mui-control-item {
+				margin: 0 10%;
+			}
+			.btn-red{
+				padding-top:10px;
+				background:#fff;
+			}
+			.mui-segmented-control-negative.mui-segmented-control-inverted .mui-control-item.mui-active {
+				color: #393939;
+				border-bottom: 2px solid #ff9702;
+			}
+			.btn button:hover{
+				background:#ff0000;
+				color:#fff;
+			}
+					.list-top{
+				line-height:45px;
+			
+		}
+			.mui-slider-indicator.mui-segmented-control{
+		height:70px;
+	}
+		.list-top span{
+			font-size:14px;
+			margin:0;
+			line-height:40px;
+			text-indent:20px;
+			color:#ff9702;
+			border-left: 2px solid #FF9702;
+			padding-left:5px;
+		}
+		.shuoming{
+			background:#fff;
+		}
+		.shuoming p{
+			line-height:30px;
+			font-size:12px;
+			color:#666666;
+		}
+		.taocan-top{
+			width:30.8vw;
+			display:inline-block;
+			color:#ff1010;
+			line-height:30px;
+			font-size:12px;
+			margin:0;
+			padding:0;
+		}
+		.taocan-top>label{
+			border:1px solid #ff1010;
+			display:block;
+			margin-top:10px;
+			border-radius:10px;
+		}
+		.taocan-top>span{
+			color:#000;
+		}
+		.taocan-top .mui-control-item .mui-active{
+			border-bottom:0;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active label{
+			background:#FF0000;
+			color:#fff;		
+			}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+			padding:0;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item label{
+			width:30.8vw;
+			height:30px;
+			line-height:30px;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active a{
+			padding:0;
+		}
+		.top-bar a span{
+			display:block;
+			
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">技师详情</h1>
+			<a class="mui-icon iconfont icon-fenxiang mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+								<div class="umsg mui-clearfix">
+									<div class="o-l-left">
+										<img src="img/ji1.png" alt="" />
+									</div>
+				        <div class="img-left">
+				           	专业技师
+				            <p>￥<span>200</span>/小时</p>
+				        </div>
+				        <div class="img-center">
+				           	<img src="img/xing1.png" alt="" />
+				            <img src="img/xing1.png" alt="" />
+				            <img src="img/xing1.png" alt="" />
+				            <img src="img/xing1.png" alt="" />
+				            <img src="img/xing2.png" alt="" />
+				        </div>
+				        <div class="img-right">
+				            <div class="img-right-top">
+				               	<span class="mui-icon iconfont icon-time"></span>
+				               	忙碌
+				            </div>
+				        </div>
+			        </div>
+							
+								
+								
+								
+								<div class="jieshao">
+									<div class="jieshao-top">
+										<span>详情介绍</span>
+									</div>
+									<ul class="mui-table-view xinxi">
+				    					<li class="mui-table-view-cell">
+											<label for="">【姓名】</label>
+											<span>李阳</span>
+				   	 					</li>
+				    					<li class="mui-table-view-cell">
+				    						<label for="">【工龄】</label>
+				    						<span>10年</span>
+				    					</li>
+				    					<li class="mui-table-view-cell">
+				    						<label for="">【地址】</label>
+				    						<span>河南省郑州市金水区农业路78号</span>
+				    					</li>
+									</ul>
+								</div>
+								
+		<!--套餐选择-->						
+			<div class="top-bar">
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1">
+						<span>套餐选择</span>
+					</a>
+					<a class="mui-control-item " href="#item2">
+						<span style="height: 30px;border-left: 1px solid #999;">评价</span>
+					</a>
+				</div>
+			</div>	
+		<div>
+			<div class="mui-control-content mui-active" id="item1">
+				<div class="taocan">
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" >
+							<a class="taocan-top mui-control-item mui-active" href="#shuoming1">
+								<label>足疗+刮痧+按摩</label>
+								<span>套餐一</span>
+							</a>
+							<a class="taocan-top mui-control-item" href="#shuoming2">
+								<label>足疗+按摩</label>
+								<span>套餐二</span>
+							</a>
+							<a class="taocan-top mui-control-item" href="#shuoming3">
+								<label>足疗+刮痧</label>
+								<span>套餐三</span>
+							</a>
+					</div>
+				</div>
+				
+				<div>
+					<div id="shuoming1" class="mui-control-content mui-active">
+						<div class="list-top">
+							<span>套餐详情</span>
+						</div>
+						<div class="shuoming">
+							<p>足浴疗法是采用药物煎汤，将其双足浸泡、洗浴，及对反射区和穴位刺激，进行治疗疾病的一种疗法。在浸泡过程中除了水的浮力作用、水的静压力作用，水的液体微粒运动对足部的摩擦作用之外，主要是水的温热作用、药物的外治作用和足反射区作用。</p>
+						</div>
+					</div>
+					<div id="shuoming2" class="mui-control-content">
+						<div class="list-top">
+							<span>套餐详情</span>
+						</div>
+						<div class="shuoming">
+							<p>水的液体微粒运动对足部的摩擦作用之外，主要是水的温热作用、药物的外治作用和足反射区作用。</p>
+						</div>
+					</div>
+					<div id="shuoming3" class="mui-control-content">
+						<div class="list-top">
+							<span>套餐详情</span>
+						</div>
+						<div class="shuoming">
+							<p>在浸泡过程中除了水的浮力作用、水的静压力作用，水的液体微粒运动对足部的摩擦作用之外，主要是水的温热作用、药物的外治作用和足反射区作用。</p>
+						</div>
+					</div>
+				</div>
+
+
+				</div>
+
+				
+			</div>
+		
+        	
+       	<div class="mui-control-content pingjia" id="item2">
+				
+				<div class="pingjiatop">
+					<span>评价</span>
+				</div>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">
+				    	<div class="mui-clearfix pingjia-top">
+							<div class="pingjia_left mui-clearfix">
+								<div class="pingjia-img"><img src="img/pingjia-logo.png"/></div>
+								<div>风***法</div>
+								<div class="o-l-c-img">
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing2.png" alt="" />
+								</div>
+							</div>
+							<div class="pingjia_right">
+								2017-3-21
+							</div>
+						</div>
+						<div class="pingjia-bottom">
+							<p>技师手法非常好，人也特别幽默。做完足疗之后感觉非常舒服，夜里睡得也特别好。</p>
+						</div>
+				    </li>
+				    <li class="mui-table-view-cell">
+				    	<div class="mui-clearfix pingjia-top">
+							<div class="pingjia_left mui-clearfix">
+								<div class="pingjia-img"><img src="img/pingjia-logo.png"/></div>
+								<div><span>风***法</span></div>
+								<div class="o-l-c-img">
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing1.png" alt="" />
+									<img src="img/xing2.png" alt="" />
+								</div>
+							</div>
+							<div class="pingjia_right">
+								2017-3-21
+							</div>
+						</div>
+						<div class="pingjia-bottom">
+							<p>技师手法非常好，人也特别幽默。做完足疗之后感觉非常舒服，夜里睡得也特别好。</p>
+						</div>
+				    </li>
+
+				</ul>
+				
+			
+			<div class="btn">
+				<span>全部评价</span>
+			</div>
+			</div>
+	</div>
+			
+			<div class="yuyue">
+				<span>直接预约</span>
+			</div>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+</html>

@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>时间表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<style type="text/css">
+			a{
+				color:#000;
+			}
+			li{
+				list-style:none;	
+			}
+			.mui-scroll{
+				background:#fff;
+				font-size:12px;
+				color:#666;
+			}
+			.mui-slider-indicator.mui-segmented-control{
+				
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color:#FF9702;
+				border-bottom: 1px solid #ff9702;
+			}
+			.mui-segmented-control .mui-control-item{
+				overflow:visible;
+				line-height:18px;
+			}
+			.mui-control-item .mui-active,.mui-control-item{
+							}
+			.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				width:16vw;
+				padding:0;
+			}
+			
+			.mui-control-item span{
+				display:block;
+				color:#666;
+			}
+			.mui-row{
+				padding:0 10px;
+				text-align:center;
+				font-size:12px;
+				color:#000;
+				margin-top:10px;
+			}
+			input[type='button'], input[type='submit'], input[type='reset'], button, .mui-btn{
+				padding:0 24px;	
+				margin-bottom:5px;
+				border-color:#e5e5e5;
+				line-height: 24px;
+			}
+			.weight-wrap input{
+				width:95%;
+			}
+			.mui-bar .mui-btn-link.mui-active, .mui-bar .mui-btn-link:active{
+				color: inherit;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				border: none;
+			}
+			input[type='button']:enabled:active, input[type='button'].mui-active:enabled, input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled, input[type='reset']:enabled:active, input[type='reset'].mui-active:enabled, button:enabled:active, button.mui-active:enabled, .mui-btn:enabled:active, .mui-btn.mui-active:enabled{
+				background:#FF9702;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        	<h1 class="mui-title">时间表</h1>
+        	<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">确定</button>
+    	</header>
+		<div id="" class="mui-content">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    			<div class="mui-scroll">
+        			<a class="mui-control-item mui-active">
+        				<span>周一</span>
+        				<span>04-03</span>
+        			</a>
+        			<a class="mui-control-item">	
+        				<span>周二</span>
+        				<span>04-04</span>
+					</a>
+					<a class="mui-control-item">	
+        				<span>周三</span>
+        				<span>04-05</span>
+					</a>
+					<a class="mui-control-item">	
+        				<span>周四</span>
+        				<span>04-06</span>
+					</a>
+					<a class="mui-control-item">	
+        				<span>周五</span>
+        				<span>04-07</span>
+					</a>
+					<a class="mui-control-item">	
+        				<span>周六</span>
+        				<span>04-08</span>
+					</a>
+					<a class="mui-control-item">	
+        				<span>周日</span>
+        				<span>04-09</span>
+					</a>
+    			</div>
+			</div>
+			<div id="" class="mui-row">
+				<div class="mui-col-xs-3">
+					<div id='showUserPicker' class="weight-wrap">
+						<input type="button" name="identity" id="identity" value="10:30" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="11:00" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="11:30" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="12:00" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="12:30" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="13:00" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="13:30" />
+					</div>
+				</div>
+				<div class="mui-col-xs-3">
+					<div id='weightPicker' class="weight-wrap">
+						<input type="button" name="weight" id="weight" value="14:00" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+
+</html>

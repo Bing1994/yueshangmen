@@ -1,0 +1,181 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"dingdan.html",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.woff",
+			"home.html",
+			"fonts/iconfont.ttf",
+			"js/dui.js"
+		],
+		"refer": [
+			"kefu.html",
+			"wode.html",
+			"dingdan.html",
+			"home.html"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"img/xing1.png",
+			"img/ji3.png",
+			"img/biao.png",
+			"img/banner.png",
+			"img/ji2.png",
+			"img/ji1.png",
+			"fonts/mui.ttf",
+			"img/xing2.png",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.woff",
+			"css/common.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"kefu.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/kefu.png",
+			"css/style.css",
+			"css/common.css"
+		]
+	},
+	"wode.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/my.png",
+			"img/my_bg.png",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/style.css",
+			"css/mui.css",
+			"fonts/iconfont.woff",
+			"img/u-02.png",
+			"img/u-01.png",
+			"img/u-03.png",
+			"css/common.css",
+			"shezhi.html",
+			"shezhidizhi.html",
+			"zhanghuyue.html",
+			"js/dui.js"
+		],
+		"refer": [
+			"shezhi.html",
+			"shezhidizhi.html",
+			"zhanghuyue.html",
+			"login.html",
+			"changyongdizhi.html"
+		]
+	},
+	"dingdan.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"css/common.css",
+			"img/ji1.png",
+			"img/xing1.png",
+			"img/xing2.png",
+			"js/dui.js"
+		],
+		"refer": [
+			"pingjia.html",
+			"zhifudingdan.html"
+		]
+	},
+	"shezhi.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/app.css"
+		]
+	},
+	"shezhidizhi.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"js/city.data.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.min.css",
+			"js/city.data-3.js",
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"img/login1.png",
+			"img/weixin.png",
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/dui.js"
+		],
+		"refer": [
+			"reg.html"
+		]
+	},
+	"zhanghuyue.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"reg.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css"
+		]
+	},
+	"pingjia.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/common.css",
+			"img/xing2.png",
+			"css/mui.min.css"
+		]
+	},
+	"zhifudingdan.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"img/xing1.png",
+			"img/ji1.png",
+			"js/mui.min.js",
+			"css/common.css",
+			"img/xing2.png",
+			"css/mui.min.css"
+		]
+	},
+	"changyongdizhi.html": {
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"css/common.css",
+			"fonts/mui.ttf",
+			"js/dui.js"
+		],
+		"refer": [
+			"shezhidizhi.html"
+		]
+	}
+}

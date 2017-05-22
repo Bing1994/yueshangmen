@@ -1,0 +1,54 @@
+body{
+	background: #f3f3f3;
+}
+.mui-bar{
+	background: #fff;
+}
+.mui-bar-nav{
+	box-shadow: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+.mui-title{
+	color: #2f2f2f;
+}
+.mui-content{
+	background: #f3f3f3;
+}
+.mui-table-view-cell.mui-active{
+	background: none;
+}
+.mui-bar .mui-icon{
+	font-size: 28px;
+}
+.mui-bar .mui-icon.icon-fenxiang{
+	font-size: 22px;
+	margin-right: -11px;
+    margin-left: -11px;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.mui-bar a{
+	color: #2f2f2f;
+}
+.mui-bar .mui-btn-link{
+	color: #2f2f2f;
+	font-size:14px;
+}
+.mui-bar-nav.mui-bar .mui-icon{
+	margin-right: -8px;
+    margin-left: -8px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mui-bar .mui-icon{
+	padding-top: 8px;
+    padding-bottom: 8px;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+	color:#FF9702;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear.mui-active, .mui-input-row .mui-input-password~.mui-icon-eye.mui-active, .mui-input-row .mui-input-speech~.mui-icon-speech.mui-active{
+	color:#999;
+}

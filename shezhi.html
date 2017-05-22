@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/common.css" rel="stylesheet" />
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			.mui-table-view-cell>a:not(.mui-btn){
+				margin: -9.5px;
+			}
+			.mui-table-view-cell{
+				padding: 9.5px;
+			}
+			.mui-table-view-cell:after {
+				height: 0;
+			}
+			.mui-table-view{
+				background: none;
+			}
+			.setting li{
+				color: #2d2d2d;
+				margin-bottom: 5px;
+				background: #fff;
+				font-size:14px;
+			}
+			.mui-table-view:after {
+				height: 0;
+			}
+			.mui-navigate-right:after, .mui-push-right:after{
+				right: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content">
+			<div class="setting">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">个人资料</a>
+					</li>
+					<li class="mui-table-view-cell">清除缓存</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</html>

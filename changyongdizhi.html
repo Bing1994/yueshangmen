@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>常用地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<style type="text/css">
+			p {
+				margin-bottom: 0;
+			}
+			
+			.mui-radio input[type=radio]:checked:before {
+				content: '\e442'
+			}
+			
+			.mui-radio input[type=radio]:before {
+				content: '\e411'
+			}
+			
+			.mui-checkbox input[type=checkbox]:checked:before,
+			.mui-radio input[type=radio]:checked:before {
+				color: #ff9702;
+			}
+			
+			.mui-checkbox input[type=checkbox]:before,
+			.mui-radio input[type=radio]:before {
+				color: #ff9702;
+			}
+			
+			.mui-input-group .mui-input-row {
+				height: 100%;
+			}
+			
+			.mui-checkbox label,
+			.mui-radio label {
+				width: 88%;
+			}
+			
+			.bianji {
+				display: inline-block;
+			}
+			
+			.mui-icon {
+				font-size: 30px;
+				color: #FF9702;
+			}
+			
+			.name {
+				color: #353434;
+				line-height: 21px;
+			}
+			
+			.name span:first-child {
+				padding: 0 8px;
+			}
+			
+			.ads {
+				color: #636262;
+				line-height: 21px;
+				font-size: 12px;
+			}
+			.ads span{
+				padding-left: 8px;
+			}
+			.moren{
+				color: #ff9702;
+			}
+			.mui-input-row label {
+				padding: 5px 0 5px 15px;
+			}
+			
+			.mui-checkbox.mui-left label,
+			.mui-radio.mui-left label {
+				padding-right: 0;
+				padding-left: 40px;
+			}
+			
+			.mui-input-group:before {
+				height: 0;
+			}
+			
+			.mui-checkbox.mui-left input[type=checkbox],
+			.mui-radio.mui-left input[type=radio] {
+				left: 10px;
+				top: 10px;
+			}
+			
+			.mui-input-group .mui-input-row:after {
+				left: 0;
+			}
+			.add_ads{
+				text-align: center;
+				height: 30px;
+				margin-top: 12px;
+			}
+			.add_ads a{
+				color: #c6c6c6;
+				line-height: 30px;
+			}
+			.add_ads a span{
+				font-size: 18px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.add_ads a span:first-child{
+				font-size: 36px;
+			}
+			.mui-bar .mui-btn-link.mui-active, .mui-bar .mui-btn-link:active{
+				color: inherit;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft mui-pull-left mui-action-back"></a>
+			<h1 class="mui-title">常用地址</h1>
+			<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">确定</button>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-group">
+				<div class="mui-input-row mui-radio mui-left ">
+					<label>
+						<div>
+							<p class="name"><span>卢思羽</span><span>13636999377</span></p>
+							<p class="ads"><span class="moren">【默认】</span><span>河南省郑州市金水区农业路</span></p>
+						</div>
+					</label>
+					<input name="radio1" type="radio" checked="true">
+					<div id="" class="bianji mui-icon mui-icon-compose">
+					</div>
+				</div>
+				<div class="mui-input-row mui-radio mui-left">
+					<label>
+						<div>
+							<p class="name"><span>卢思羽</span><span>13636999377</span></p>
+							<p class="ads"><span>河南省郑州市金水区农业路</span></p>
+						</div>
+					</label>
+					<input name="radio1" type="radio">
+					<div id="" class="bianji mui-icon mui-icon-compose">
+					</div>
+				</div>
+				<div class="mui-input-row mui-radio mui-left">
+					<label>
+						<div>
+							<p class="name"><span>卢思羽</span><span>13636999377</span></p>
+							<p class="ads"><span>河南省郑州市金水区农业路</span></p>
+						</div>
+					</label>
+					<input name="radio1" type="radio">
+					<div id="" class="bianji mui-icon mui-icon-compose">
+					</div>
+				</div>
+				<div class="mui-input-row mui-radio mui-left">
+					<label>
+						<div>
+							<p class="name"><span>卢思羽</span><span>13636999377</span></p>
+							<p class="ads"><span>河南省郑州市金水区农业路</span></p>
+						</div>
+					</label>
+					<input name="radio1" type="radio">
+					<div id="" class="bianji mui-icon mui-icon-compose">
+					</div>
+				</div>
+			</div>
+			<div class="add_ads">
+				<a id="add_ads"><span>+</span><span>添加新地址</span></a>
+			</div>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script src="js/dui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui('.add_ads').on('tap','#add_ads',function(){
+				dui.jump('shezhidizhi.html','shezhidizhi');
+			})
+		</script>
+
+</html>

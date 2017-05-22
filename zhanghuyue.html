@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>账户余额</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<style type="text/css">
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0;
+			}
+			
+			.mui-table-view {
+				background: none;
+			}
+			
+			.mui-table-view:before {
+				height: 0;
+			}
+			
+			.mui-table-view-cell {
+				margin-bottom: 10px;
+				background: #fff;
+				padding: 9.5px 15px;
+			}
+			
+			.mui-table-view-cell:after,
+			.mui-table-view:after {
+				height: 0;
+			}
+			
+			.mui-content {
+				color: #2d2d2d;
+			}
+			
+			.mui-navigate-right:after,
+			.mui-push-left:after,
+			.mui-push-right:after {
+				color: #949494;
+			}
+			.mui-table-view-cell{
+				font-size:14px;
+				color:#2d2d2d;
+			}
+			.mui-table-view-cell span{
+				width:49%;
+				display:inline-block;
+			}
+			.mui-table-view-cell span:last-child{
+				text-align: right;
+			}
+			.mui-table-view-cell>a:not(.mui-btn) {
+				margin: -9.5px -15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">账户余额</h1>
+		</header>
+		<div class="mui-content">
+			<div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<span>余额</span>
+						<span>0.0</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">微信充值</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+
+</html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>定位</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style>
+			a {
+				color: #000;
+			}
+			input[type=search]{
+				background: #f7f7f7;
+			}
+			.mui-search .mui-placeholder{
+				color:#cbcaca;
+				font-size:12px;
+				text-align: left;
+				padding-left:20px;
+				margin-top:10px;				
+			}
+			.mui-search input[type=search]{
+				margin-top:10px;
+				padding-left:20px;
+			}
+			.mui-search{
+				padding:0 10px;
+			}
+			.mui-search.mui-active:before{
+				left: 0;
+				text-align: right;
+    			right: 20px;
+			}
+			.mui-search .mui-placeholder .mui-icon{
+				position: absolute;
+		 		right: 20px;
+		 		top: 50%;
+		 		transform: translateY(-50%);
+			}	
+				
+			/*折叠面板*/
+			
+			.mui-table-view:after {
+				height: 0;
+			}
+			
+			.mui-navigate-right p {
+				display: inline-block;
+				width: 50%;
+				font-size: 14px;
+			}
+			
+			.dizhi {
+				text-align: left;
+			}
+			
+			.xuanze {
+				text-align: right;
+				padding-right: 30px;
+			}
+			
+			.mui-row {
+				text-align: center;
+				font-size: 12px;
+				color: #000;
+				margin-top: 10px;
+			}
+			
+			input[type='button'],
+			input[type='submit'],
+			input[type='reset'],
+			button,
+			.mui-btn {
+				margin-bottom: 5px;
+				border-color: #ffcd86;
+			}
+			
+			.mui-collapse-content:before {
+				position: absolute;
+				right: 0;
+				left: 0;
+				height: 1px;
+				content: '';
+				-webkit-transform: scaleY(.5);
+				transform: scaleY(.5);
+				background-color: #c8c7cc;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-collapse-content {
+				margin-top: 0;
+			}
+			.mui-btn, button, input[type=button], input[type=reset], input[type=submit]{
+				padding:6px 0;
+			}
+			.weight-wrap input {
+				width: 95%;
+			}
+			.mui-table-view-cell.mui-collapse .mui-collapse-content{
+				padding:8px 10px;
+			}
+			
+			.mui-bar .mui-btn-link.mui-active,
+			.mui-bar .mui-btn-link:active {
+				color: inherit;
+			}
+			
+			.mui-btn-blue.mui-active:enabled,
+			.mui-btn-blue:enabled:active,
+			.mui-btn-primary.mui-active:enabled,
+			.mui-btn-primary:enabled:active,
+			input[type=submit].mui-active:enabled,
+			input[type=submit]:enabled:active {
+				border: none;
+			}
+			
+			input[type='button']:enabled:active,
+			input[type='button'].mui-active:enabled,
+			input[type='submit']:enabled:active,
+			input[type='submit'].mui-active:enabled,
+			input[type='reset']:enabled:active,
+			input[type='reset'].mui-active:enabled,
+			button:enabled:active,
+			button.mui-active:enabled,
+			.mui-btn:enabled:active,
+			.mui-btn.mui-active:enabled {
+				background: #FF9702;
+			}
+			
+			
+			
+			.mui-row div{
+				width:20%;
+				float:left;
+			}
+			/*周边技师*/
+			
+			.zhoubian {
+				background: #fff;
+				padding: 0 10px;
+				margin-top: 10px;
+			}
+			
+		
+			.zhoubian-top span {
+				display: block;
+				font-size: 14px;
+				color: #FF9702;
+				line-height: 40px;
+			}
+			
+			.jishi li {
+				width: 20%;
+				float: left;
+				padding: 0;
+				list-style:none;
+			}
+			.jishi li a{
+				display:block;
+			}
+			
+			.jishi:after {
+				height: 0;
+			}
+			
+			.jishi p {
+				font-size: 14px;
+				color: #252524;
+			}
+			
+			.jishi {
+				padding:0;
+				text-align: center;
+				margin:0;
+			}
+			
+			.jishi img {
+				width: 40px;
+				vertical-align: bottom;
+				border-radius: 50px;
+				border: 1px solid #FF9702;
+			}
+			.jishi>a:not(.mui-btn) {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">定位</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-row mui-search" style="background:#fff;">
+				<input type="search" class="mui-input " placeholder="输入城市名">
+			</div>
+			<div id="">
+				<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right" href="#">
+						<p class="dizhi" style="color:#FF9702;">当前:<span>郑州</span>-<span>金水区</span></p>
+						<p class="xuanze" style="color:#888787;">选择区域</p>
+					</a>
+					<div class="mui-collapse-content">
+						<div id="" class="mui-row">
+							
+								<div id='showUserPicker' class="weight-wrap">
+									<input type="button" name="identity" id="identity" value="惠济区" />
+								</div>
+				
+							
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="金水区" />
+								</div>
+			
+							
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="管城区" />
+								</div>
+			
+						
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="二七区" />
+								</div>
+			
+							
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="郑东新区" />
+								</div>
+			
+						
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="CBD" />
+								</div>
+					
+							
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="中原区" />
+								</div>
+					
+							
+								<div id='weightPicker' class="weight-wrap">
+									<input type="button" name="weight" id="weight" value="高新区" />
+								</div>
+				
+						</div>
+					</div>
+				</li>
+			</ul>
+			</div>
+			<!--周边技师	-->
+			<div class="zhoubian">
+				<div class="zhoubian-top">
+					<span>周边技师</span>
+				</div>
+
+				<div id="">
+					<ul class="jishi">
+					<li>
+						<a>
+							<img src="img/ji1.png" alt="" />
+							<p>陈鑫</p>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="img/ji1.png" alt="" />
+							<p>小叮当</p>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="img/ji1.png" alt="" />
+							<p>五月烟雨</p>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="img/ji1.png" alt="" />
+							<p>啊风景</p>
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="img/ji1.png" alt="" />
+							<p>孟欣</p>
+						</a>
+					</li>
+					
+					<div style="clear:both;"></div>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+
+</html>

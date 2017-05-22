@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<style>
+			a{
+				color:#000;
+			}
+			.mui-input-group .mui-input-row:after,.mui-input-group:after,.mui-input-group:before{
+				height:0;
+			}
+			.reg{
+				display:inline-block;
+				font-size:12px;
+				float:right;
+			}
+			.content-top{
+				height:140px;
+				position:relative;
+			}
+			.top-img{
+				width:50px;
+				height:50px;
+				position:absolute;
+				top:50%;
+    			left: 50%;
+    			transform: translate(-50%, -50%)
+			}
+			.login{
+				min-height:190px;
+				padding:0 10px;
+			}
+			.phone,.password{
+				border-radius:4px;
+			}
+			.phone input,.password input{
+				background:#fff;
+				font-size:14px;
+				color:#adadad;	
+			}
+			.mui-input-group{
+				background:#f3f3f3;
+				
+			}
+			.mui-input-group .mui-input-row{
+				margin-bottom:10px;
+			}
+			.forget{
+    			text-align:right;
+    			font-size: 12px;
+    			color: #ff9702;
+    			margin-top: 14px;
+			}
+			.denglu{
+				width: 100%;
+				background:#ff9702;
+				color:#fff;
+				height:40px;
+				display: block;
+				border:none;
+			}
+			.foot{
+				background:#f3f3f3;
+			}
+			.foot-img{
+				width:40px;
+				height:40px;
+				position:relative;
+				top:80%;
+    			left: 50%;
+    			transform: translate(-50%, -50%)
+			}
+			.foot-text {
+    			position: relative;
+    			display: -webkit-box;
+   				padding:45px 0;
+    			color: #000;
+    			font-size:12px;
+    			width:70%;
+    			margin: 0 auto;
+    			-webkit-box-pack: center;
+			}
+			.foot-text:after {
+    			content: "";
+    			height: 1px;
+    			width: 100%;
+   				position: absolute;
+    			top: 50%;
+    			left: 0;
+    			background-color: #ff9702;
+    			-webkit-transform: scaleY(0.5);
+			}
+			.foot-text:after {
+    			margin-top: -0.5px;
+			}
+			.foot-layout {
+    			padding: 0 10px;
+   				background:#f3f3f3;
+    			position:relative;
+    			display: block;
+    			z-index:2;
+			}
+			.mui-button-row{
+				padding:0;
+				margin-top:40px;
+			}
+			.mui-btn{
+				border:none;
+			}
+			.mui-bar .mui-btn-link.mui-active, .mui-bar .mui-btn-link:active{
+				color: inherit;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				border: none;
+			}
+			.phone i,.password i{
+			position: absolute;
+   			top: 30%;
+    		left: 10px;
+			font-size:14px;
+			color:#adadad;
+		}		
+		input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+			padding:10px 30px;
+		}
+		</style>
+	</head> 
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        	<h1 class="mui-title">登陆</h1>
+        	<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right" id="register">立即注册</button>
+    	</header>
+    	<div class="mui-content">
+			<div class="content-top">
+				<div class="top-img">
+					<img src="img/login1.png" alt="" />
+				</div>
+			</div>
+			<div class="login">
+				<form class="mui-input-group">
+					<div class="mui-input-row phone">
+						<i class="mui-icon iconfont icon-wode"></i>
+    					<input type="text" class="mui-input-clear" placeholder="请输入账号">
+    				</div>
+    				<div class="mui-input-row password">
+    					<i class="mui-icon mui-icon-locked"></i>
+    					<input type="text" class="mui-input-password" placeholder="请输入密码">
+    				</div>
+    			</form>
+    			<div class="forget mui-clearfix">
+    				<span>忘记密码</span>
+    			</div>
+    			<div class="mui-button-row">
+					<button class="mui-btn denglu" type="button">登陆</button>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="foot-text">
+					<span class="foot-layout">
+                       	第三方登陆
+                    </span>
+				</div>
+				<div class="foot-img">
+					<img src="img/weixin.png" alt="" />
+				</div>
+			</div>
+    	</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script src="js/dui.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			var register;
+			mui.plusReady(function() {
+				register = document.getElementById('register');
+			//立即注册
+				register.addEventListener('tap', function() {
+					dui.jump('reg.html', 'reg.html');
+				}, false);
+		
+		})
+		</script>
+</html>

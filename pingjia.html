@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>评价</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<style type="text/css">
+			p {
+				margin-bottom: 0;
+			}
+			
+
+			.mui-bar .mui-btn-link.mui-active, .mui-bar .mui-btn-link:active{
+				color: inherit;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				border: none;
+			}
+			
+			  .test_box {
+    			width: 100%; 
+    			height: 100px;
+    			overflow:hidden;
+    			background:#fff;
+    			font-size:12px;
+    			color:#9e9c9b;
+    			text-indent:20px;
+    		}
+    		textarea{
+    			border:0;
+    			border-radius:0;
+    			font-size:14px;
+    			overflow:hidden;
+    			margin: 0;
+    		}
+    		.centent-bottom{
+    			height:70px;
+    			background:#fff;
+    			margin:0;
+    			padding-left:10px;
+    		}
+    		.centent-bottom li{
+				list-style:none;
+				padding:7px;
+				font-size:14px;
+			}
+			.star{
+				display:inline-block;
+				margin-left:10px;
+			}
+			.star img{
+				width: 15px;
+				display:inline-block;
+				vertical-align: middle;
+				margin-right:10px;
+			}
+			.tips{
+				vertical-align: middle;
+				display: inline-block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">评价</h1>
+			<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">发布</button>
+		</header>
+		<div class="mui-content">
+			<form action="">
+				<textarea name="" rows="6" placeholder="您对这次服务满意么？"></textarea>
+			</form>
+			<ul class="centent-bottom">
+				<li>
+					<span class="tips">服务态度</span>
+					<div class="star">
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+					</div>
+				</li>
+				<li>
+					<span class="tips">技能评价</span>
+					<div class="star">
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+						<img src="img/xing2.png"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+            mui('.star').on('tap','img',function(){
+                this.prevAll().attr('src','img/xing2.png');
+                this.attr('src','img/xing2.png');
+                this.nextAll().attr('src','img/xing1.png');
+            })
+
+		// function rate(obj,oEvent){ 
+
+		// 	var imgSrc = 'img/xing2.png'; 
+		// 	var imgSrc_2 = 'img/xing1.png'; 
+
+		// 	if(obj.rateFlag) return; 
+		// 		var e = oEvent || window.event; 
+		// 		var target = e.target || e.srcElement;  
+		// 		var imgArray = obj.getElementsByTagName("img"); 
+		// 			for(var i=0;i<imgArray.length;i++){ 
+		// 				imgArray[i]._num = i; 
+		// 				imgArray[i].onclick=function(){ 
+		// 				if(obj.rateFlag)
+		// 				return; 
+		// 				obj.rateFlag=true; 
+		// 				alert(this._num+1); 
+		// 			}; 
+		// 		} 
+	
+		// 		if(target.tagName=="IMG"){ 
+		// 			for(var j=0;j<imgArray.length;j++){ 
+		// 				if(j<=target._num){ 
+		// 					imgArray[j].src=imgSrc_2; 
+		// 				}else{ 
+		// 					imgArray[j].src=imgSrc; 
+		// 				} 
+		// 			} 
+		// 		}else{ 
+		// 			for(var k=0;k<imgArray.length;k++){ 
+		// 				imgArray[k].src=imgSrc; 
+		// 			} 
+		// 		}
+		// 	} 
+		</script>
+
+
+</html>

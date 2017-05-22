@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>预约</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<style type="text/css">
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0;
+			}
+			
+			.mui-table-view {
+				background: none;
+			}
+			
+			.mui-table-view:before {
+				height: 0;
+			}
+			
+			.mui-table-view-cell {
+				margin-bottom: 10px;
+				background: #fff;
+				padding: 9.5px 15px;
+			}
+			
+			.mui-table-view-cell:after,
+			.mui-table-view:after {
+				height: 0;
+			}
+			
+			.mui-content {
+				color: #2d2d2d;
+			}
+			
+			.mui-navigate-right:after,
+			.mui-push-left:after,
+			.mui-push-right:after {
+				color: #949494;
+			}
+			.mui-table-view-cell{
+				font-size:14px;
+				color:#969696;
+			}
+
+			.mui-table-view-cell span:last-child{
+				text-align: right;
+			}
+			.mui-table-view-cell>a:not(.mui-btn) {
+				margin: -9.5px -15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-action-menu mui-icon-back mui-pull-left"></a>
+			<h1 class="mui-title">预约</h1>
+		</header>
+		<div class="mui-content">
+			<div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<p>3月18日<span>18:30</span></p>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<p>卢思宇<span>13636999377</span></p>
+							<p>河南省郑州市金水区农业路18号</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
